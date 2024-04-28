@@ -1,0 +1,30 @@
+.country-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .country-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 992px) {
+    .country-card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .country-card {
+        width: calc(25% - 20px);
+    }
+}
+
+.country-card.active {
+    outline: 2px solid green;
+}

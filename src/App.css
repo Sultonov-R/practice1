@@ -1,0 +1,41 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  .country-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    
+  }
+  
+  .country-card.active {
+    outline: 2px solid green; 
+  }
+  
+  @media screen and (max-width: 768px) {
+    .country-card {
+      width: calc(40% - 20px); 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .country-card {
+      width: calc(60% - 20px); 
+    }
+  }
+  
